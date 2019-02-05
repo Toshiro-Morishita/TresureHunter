@@ -21,3 +21,16 @@ body {
 .box {
   cursor: pointer;
 }
+
+.shake:hover {
+  animation-name: shake;
+  animation-duration: .2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: rotate(8deg) translate(1px, 0); }
+  50% { transform: rotate(-8deg) translate(-1px, 0); }
+  100% { transform: rotate(8deg) translate(1px, 0); }
+}
